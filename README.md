@@ -1,6 +1,16 @@
 # Airline Dashboard
 
-!Airline Dashboard
+
+## Table of Contents
+
+- Overview
+- Features
+- Installation
+- Usage
+- Configuration
+- Contributing
+- License
+- Contact
 
 ## Overview
 
@@ -39,6 +49,34 @@ To get started with the Airline Dashboard, follow these steps:
 
 Once the application is running, open your browser and navigate to `http://localhost:3000` to access the dashboard. You can log in with your credentials and start exploring the features.
 
+## Configuration
+
+To configure the Airline Dashboard, you can modify the `config.json` file located in the root directory. Here are some of the key settings you can adjust:
+
+- **API Keys**: Add your API keys for flight data providers.
+- **Database Settings**: Configure your database connection settings.
+- **User Roles**: Define user roles and permissions.
+
+Example `config.json`:
+```json
+{
+  "apiKeys": {
+    "flightDataProvider": "YOUR_API_KEY"
+  },
+  "database": {
+    "host": "localhost",
+    "port": 5432,
+    "username": "yourusername",
+    "password": "yourpassword",
+    "database": "airline_dashboard"
+  },
+  "userRoles": {
+    "admin": ["create", "read", "update", "delete"],
+    "user": ["read"]
+  }
+}
+```
+
 ## Contributing
 
 We welcome contributions from the community! To contribute, please follow these steps:
@@ -55,8 +93,4 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 ## Contact
 
-For any questions or feedback, please reach out to us at rahul.rkumar23@gmail.com.
-
----
-
-Feel free to customize this template to better fit your project's specific needs. Let me know if there's anything else you'd like to add or modify!
+For any questions or feedback, please reach out to us at rvats20.
